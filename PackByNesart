@@ -27,7 +27,6 @@ public class packbynesart {
     public static int delay = 0;
     public static KeyBinding keyPearl;
     public static KeyBinding enabled;
-    public static KeyBinding ElytraSwap;
     private boolean Enabled = false;
     public packbynesart() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
