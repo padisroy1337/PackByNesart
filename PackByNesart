@@ -43,8 +43,6 @@ public class packbynesart {
         ClientRegistry.registerKeyBinding(enabled);
         keyPearl = new KeyBinding("Use pearl", GLFW.GLFW_KEY_X, "ByNesart");
         ClientRegistry.registerKeyBinding(keyPearl);
-        ElytraSwap = new KeyBinding("Swap Elytra", GLFW.GLFW_KEY_B, "ByNesart");
-        ClientRegistry.registerKeyBinding(ElytraSwap);
     }
     @SubscribeEvent
     public void onTick(TickEvent.ClientTickEvent e) {
@@ -132,9 +130,6 @@ public class packbynesart {
                     }
                 }
             }
-        }
-        if(ElytraSwap.isPressed()){
-            mc.player.tryToStartFallFlying();
         }
     }
 }
